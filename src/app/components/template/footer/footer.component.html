@@ -1,9 +1,15 @@
 <mat-toolbar class="footer">
     <span>
         Desenvolvido com 
-        <i class="material-icons red v-middle">
+        <i class="material-icons red v-middle" appRed>
             favorite
         </i>
-        por <strong>Dev<span class="red">I</span>o</strong>
+        por <strong>Dev<span class="red" >I</span>o</strong>
     </span>
+
+    <ul>
+        <li *appFor="let item off [1, 2, 3]">
+            {{ item }}
+        </li>
+    </ul>
 </mat-toolbar>
