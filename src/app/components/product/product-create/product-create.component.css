@@ -1,0 +1,15 @@
+#material{
+    background-color: #3F51B5;
+}
+
+button{
+    margin-right: 15px;
+    margin-top: 20px;
+    width: 100px;
+    background-color: #2c2e36;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
