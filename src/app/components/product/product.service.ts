@@ -25,4 +25,9 @@ baseUrl: string = "http://localhost:3001/produtos";
   create(produto : Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, produto);
   }
+
+  read(): Observable<Product[]>{
+    
+      return this.http.get<Product[]>(this.baseUrl);
+  }
 }
