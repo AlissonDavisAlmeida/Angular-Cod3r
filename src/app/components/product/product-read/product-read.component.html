@@ -11,7 +11,7 @@
         <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="name">
+    <ng-container matColumnDef="nome">
         <mat-header-cell *matHeaderCellDef> Nome
         </mat-header-cell>
         <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
@@ -20,10 +20,28 @@
     <ng-container matColumnDef="price">
         <mat-header-cell *matHeaderCellDef> Preço
         </mat-header-cell>
-        <mat-cell *matCellDef="let element"> R${{element.price}} </mat-cell>
+        <mat-cell *matCellDef="let element"> {{element.price | currency: 'BRL'}} </mat-cell>
     </ng-container>
 
-    <mat-header-row *matHeaderRowDef="['id','name', 'price']"></mat-header-row>
-    <mat-row *matRowDef="let element; columns: ['id','name','price']"></mat-row>
+
+    <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef> Ações
+        </mat-header-cell>
+        <mat-cell *matCellDef="let element"> 
+            <a routerLink="/">
+                <i class="material-icons" id="edit">
+                    edit
+                </i>
+            </a> 
+            <a routerLink="/">
+                <i class="material-icons" id="dele">
+                    delete
+                </i>
+            </a> 
+        </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let element; columns: displayedColumns"></mat-row>
   
 </mat-table>

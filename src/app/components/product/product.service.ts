@@ -30,4 +30,15 @@ baseUrl: string = "http://localhost:3001/produtos";
     
       return this.http.get<Product[]>(this.baseUrl);
   }
+
+  readById(id : String):Observable<Product>{
+    const url = `${this.baseUrl}/${id}`;
+      return this.http.get<Product>(url);
+  }
+
+  update(produt : Product): Observable<Product>{
+    const url = `${this.baseUrl}/${produt.id}`;
+    return  this.http.put<Product>(url, produt);
+
+  }
 }

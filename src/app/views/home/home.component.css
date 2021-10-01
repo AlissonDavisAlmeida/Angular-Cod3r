@@ -1,8 +1,10 @@
 #mat{
     background-color: rgb(74, 74, 236);
+    text-align: center;
 }
 
 .home .title {
+    
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.2;
@@ -12,3 +14,12 @@
     font-size: 1rem;
     
 }
+div{
+    text-align: center;
+    
+  
+}
+img{
+    box-shadow: 3px 5px 10px;
+}
+
