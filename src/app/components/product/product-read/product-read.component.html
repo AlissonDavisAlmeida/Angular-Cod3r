@@ -28,12 +28,12 @@
         <mat-header-cell *matHeaderCellDef> Ações
         </mat-header-cell>
         <mat-cell *matCellDef="let element"> 
-            <a routerLink="/">
+            <a routerLink="/products/update/{{ element.id }}">
                 <i class="material-icons" id="edit">
                     edit
                 </i>
             </a> 
-            <a routerLink="/">
+            <a routerLink="/products/delete/{{ element.id }}">
                 <i class="material-icons" id="dele">
                     delete
                 </i>

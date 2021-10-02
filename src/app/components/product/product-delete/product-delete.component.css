@@ -1,0 +1,20 @@
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input{
+    color: black;
+    
+}
+
+button{
+    margin: 10px;
+}
+
+#material{
+    
+    color: black;
+    text-align: center;
+}

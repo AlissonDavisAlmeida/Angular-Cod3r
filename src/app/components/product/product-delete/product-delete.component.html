@@ -1,0 +1,18 @@
+<mat-card id="material">
+    <mat-card-header id="edit">
+        <mat-card-title>Remover Produto</mat-card-title>
+    </mat-card-header>
+    <form action="">
+        <mat-form-field>
+            <input id="nome" matInput placeholder="Nome" [value]=" produto.name " name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input id="preco" matInput placeholder="Preço" [value]=" produto.price " name="price" disabled>
+        </mat-form-field>
+    </form>
+
+    
+    <button mat-raised-button (click)="delete()" color="warn">Remover</button>
+    <button mat-raised-button  (click)="cancelar()" color="primary">Cancelar</button>
+
+</mat-card>

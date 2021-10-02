@@ -1,0 +1,15 @@
+form{
+    display: flex;
+    flex-direction:column;
+    
+}
+
+button{
+    margin: 20px 15px 0 0;
+}
+
+#material{
+    background-color: rgb(136, 134, 139);
+    color: black;
+    text-align: center;
+}
